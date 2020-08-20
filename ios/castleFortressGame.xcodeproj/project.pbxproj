@@ -11,15 +11,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1B6FC49F1B73219D6539B681 /* libPods-castleFortressGame-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E82DD9ABDB2D19D7C6D08315 /* libPods-castleFortressGame-tvOS.a */; };
+		1BA426C580A098C0986DBA57 /* libPods-castleFortressGame-castleFortressGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE262A46096C5D22BDEBAC2 /* libPods-castleFortressGame-castleFortressGameTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* castleFortressGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* castleFortressGameTests.m */; };
-		5A49737E3E19CE97EC129CD9 /* libPods-castleFortressGame-castleFortressGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 082FDBEC1861F7BC91C243A6 /* libPods-castleFortressGame-castleFortressGameTests.a */; };
+		37D9084124E5B448E0103544 /* libPods-castleFortressGame-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29674E4F2518091B2970A2A1 /* libPods-castleFortressGame-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		984AD8043C3895FADFB29A4A /* libPods-castleFortressGame-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CF7614E46400068384FA1F /* libPods-castleFortressGame-tvOSTests.a */; };
-		DB553990A15E0B1BCE52AE13 /* libPods-castleFortressGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0516885021E4E32FC0931C /* libPods-castleFortressGame.a */; };
+		E2A3D18079AB1DAE465C03E5 /* libPods-castleFortressGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3981388B71A0A378EFFDBB07 /* libPods-castleFortressGame.a */; };
+		ED4F54F8BA1D15D7758E1FA6 /* libPods-castleFortressGame-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF926F7837EEB5D9F0E06E10 /* libPods-castleFortressGame-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,27 +44,27 @@
 		00E356EE1AD99517003FC87E /* castleFortressGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = castleFortressGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* castleFortressGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = castleFortressGameTests.m; sourceTree = "<group>"; };
-		082FDBEC1861F7BC91C243A6 /* libPods-castleFortressGame-castleFortressGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame-castleFortressGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* castleFortressGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = castleFortressGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		056D10179DC6736F48B20685 /* Pods-castleFortressGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame.debug.xcconfig"; path = "Target Support Files/Pods-castleFortressGame/Pods-castleFortressGame.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Castle Fortress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Castle Fortress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = castleFortressGame/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = castleFortressGame/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = castleFortressGame/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = castleFortressGame/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = castleFortressGame/main.m; sourceTree = "<group>"; };
-		17ED0F93A7702E64F7FD9CA6 /* Pods-castleFortressGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame.release.xcconfig"; path = "Target Support Files/Pods-castleFortressGame/Pods-castleFortressGame.release.xcconfig"; sourceTree = "<group>"; };
-		2AFAF4EAEBDC26683174DC21 /* Pods-castleFortressGame-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-tvOS/Pods-castleFortressGame-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		29674E4F2518091B2970A2A1 /* libPods-castleFortressGame-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* castleFortressGame-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "castleFortressGame-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* castleFortressGame-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "castleFortressGame-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		372001946906A8BF5C80BA9D /* Pods-castleFortressGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame.debug.xcconfig"; path = "Target Support Files/Pods-castleFortressGame/Pods-castleFortressGame.debug.xcconfig"; sourceTree = "<group>"; };
-		48E4233F262EEC9F725B2FDD /* Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-castleFortressGameTests/Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4A0516885021E4E32FC0931C /* libPods-castleFortressGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63CF7614E46400068384FA1F /* libPods-castleFortressGame-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		80FDA0ACECE11D0C515A96FA /* Pods-castleFortressGame-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-tvOS.release.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-tvOS/Pods-castleFortressGame-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		3981388B71A0A378EFFDBB07 /* libPods-castleFortressGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		598855E0F3E2A2DCD0789188 /* Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-castleFortressGameTests/Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = castleFortressGame/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		86264007A4BEFCC879521E66 /* Pods-castleFortressGame-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-tvOSTests/Pods-castleFortressGame-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E82DD9ABDB2D19D7C6D08315 /* libPods-castleFortressGame-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E88D8E0943CD82F13FFA685E /* Pods-castleFortressGame-castleFortressGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-castleFortressGameTests.release.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-castleFortressGameTests/Pods-castleFortressGame-castleFortressGameTests.release.xcconfig"; sourceTree = "<group>"; };
-		EA22A8EC4AC507F98A6D7E16 /* Pods-castleFortressGame-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-tvOSTests/Pods-castleFortressGame-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		93CA53BB146FC0133584A078 /* Pods-castleFortressGame-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-tvOSTests/Pods-castleFortressGame-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		A78F45EFD3B44525A4423E28 /* Pods-castleFortressGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame.release.xcconfig"; path = "Target Support Files/Pods-castleFortressGame/Pods-castleFortressGame.release.xcconfig"; sourceTree = "<group>"; };
+		A9F99D24043C03B08BF4B821 /* Pods-castleFortressGame-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-tvOS.release.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-tvOS/Pods-castleFortressGame-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		B45A407A706C79E4287FE079 /* Pods-castleFortressGame-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-tvOSTests/Pods-castleFortressGame-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDA407BA3236DAD2F494D24F /* Pods-castleFortressGame-castleFortressGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-castleFortressGameTests.release.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-castleFortressGameTests/Pods-castleFortressGame-castleFortressGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDE262A46096C5D22BDEBAC2 /* libPods-castleFortressGame-castleFortressGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame-castleFortressGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C189FF1560A1566A06213A40 /* Pods-castleFortressGame-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-tvOS/Pods-castleFortressGame-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DF926F7837EEB5D9F0E06E10 /* libPods-castleFortressGame-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A49737E3E19CE97EC129CD9 /* libPods-castleFortressGame-castleFortressGameTests.a in Frameworks */,
+				1BA426C580A098C0986DBA57 /* libPods-castleFortressGame-castleFortressGameTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB553990A15E0B1BCE52AE13 /* libPods-castleFortressGame.a in Frameworks */,
+				E2A3D18079AB1DAE465C03E5 /* libPods-castleFortressGame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B6FC49F1B73219D6539B681 /* libPods-castleFortressGame-tvOS.a in Frameworks */,
+				37D9084124E5B448E0103544 /* libPods-castleFortressGame-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				984AD8043C3895FADFB29A4A /* libPods-castleFortressGame-tvOSTests.a in Frameworks */,
+				ED4F54F8BA1D15D7758E1FA6 /* libPods-castleFortressGame-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,12 +141,27 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				4A0516885021E4E32FC0931C /* libPods-castleFortressGame.a */,
-				082FDBEC1861F7BC91C243A6 /* libPods-castleFortressGame-castleFortressGameTests.a */,
-				E82DD9ABDB2D19D7C6D08315 /* libPods-castleFortressGame-tvOS.a */,
-				63CF7614E46400068384FA1F /* libPods-castleFortressGame-tvOSTests.a */,
+				3981388B71A0A378EFFDBB07 /* libPods-castleFortressGame.a */,
+				BDE262A46096C5D22BDEBAC2 /* libPods-castleFortressGame-castleFortressGameTests.a */,
+				29674E4F2518091B2970A2A1 /* libPods-castleFortressGame-tvOS.a */,
+				DF926F7837EEB5D9F0E06E10 /* libPods-castleFortressGame-tvOSTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		497AAFA302676F4A55CB55EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				056D10179DC6736F48B20685 /* Pods-castleFortressGame.debug.xcconfig */,
+				A78F45EFD3B44525A4423E28 /* Pods-castleFortressGame.release.xcconfig */,
+				598855E0F3E2A2DCD0789188 /* Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig */,
+				BDA407BA3236DAD2F494D24F /* Pods-castleFortressGame-castleFortressGameTests.release.xcconfig */,
+				C189FF1560A1566A06213A40 /* Pods-castleFortressGame-tvOS.debug.xcconfig */,
+				A9F99D24043C03B08BF4B821 /* Pods-castleFortressGame-tvOS.release.xcconfig */,
+				B45A407A706C79E4287FE079 /* Pods-castleFortressGame-tvOSTests.debug.xcconfig */,
+				93CA53BB146FC0133584A078 /* Pods-castleFortressGame-tvOSTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -164,7 +179,7 @@
 				00E356EF1AD99517003FC87E /* castleFortressGameTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				9A90A22D986E283CCDB52F6A /* Pods */,
+				497AAFA302676F4A55CB55EC /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -174,28 +189,12 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* castleFortressGame.app */,
+				13B07F961A680F5B00A75B9A /* Castle Fortress.app */,
 				00E356EE1AD99517003FC87E /* castleFortressGameTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* castleFortressGame-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* castleFortressGame-tvOSTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9A90A22D986E283CCDB52F6A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				372001946906A8BF5C80BA9D /* Pods-castleFortressGame.debug.xcconfig */,
-				17ED0F93A7702E64F7FD9CA6 /* Pods-castleFortressGame.release.xcconfig */,
-				48E4233F262EEC9F725B2FDD /* Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig */,
-				E88D8E0943CD82F13FFA685E /* Pods-castleFortressGame-castleFortressGameTests.release.xcconfig */,
-				2AFAF4EAEBDC26683174DC21 /* Pods-castleFortressGame-tvOS.debug.xcconfig */,
-				80FDA0ACECE11D0C515A96FA /* Pods-castleFortressGame-tvOS.release.xcconfig */,
-				86264007A4BEFCC879521E66 /* Pods-castleFortressGame-tvOSTests.debug.xcconfig */,
-				EA22A8EC4AC507F98A6D7E16 /* Pods-castleFortressGame-tvOSTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,11 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "castleFortressGameTests" */;
 			buildPhases = (
-				451DF788ECB110359A522B4B /* [CP] Check Pods Manifest.lock */,
+				E0DDE247AFF7D2E9C5E90ADE /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				1923D3DFFAF55FE0446355ED /* [CP] Copy Pods Resources */,
+				4D571973ED939B193511DD33 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,13 +224,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "castleFortressGame" */;
 			buildPhases = (
-				3B889E1BA1E03EC5856A12BC /* [CP] Check Pods Manifest.lock */,
+				89F81411E9071A4C71A05DA2 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				CF1A46A9B6725F548EBF3577 /* [CP] Copy Pods Resources */,
+				C9D18301DA60E4E2F0BF9F7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,14 +238,14 @@
 			);
 			name = castleFortressGame;
 			productName = castleFortressGame;
-			productReference = 13B07F961A680F5B00A75B9A /* castleFortressGame.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Castle Fortress.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* castleFortressGame-tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "castleFortressGame-tvOS" */;
 			buildPhases = (
-				22D7815E6F10CBA429FF8516 /* [CP] Check Pods Manifest.lock */,
+				FBC90AE6F5E846953AA6E562 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -266,7 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "castleFortressGame-tvOSTests" */;
 			buildPhases = (
-				64886016909662B7E1E5F1D5 /* [CP] Check Pods Manifest.lock */,
+				E01CC78D2633B9CA5C912A98 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -294,6 +293,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 2N39RD76AF;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -377,7 +377,21 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		1923D3DFFAF55FE0446355ED /* [CP] Copy Pods Resources */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		4D571973ED939B193511DD33 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,43 +409,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-castleFortressGame-castleFortressGameTests/Pods-castleFortressGame-castleFortressGameTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		22D7815E6F10CBA429FF8516 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-castleFortressGame-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		3B889E1BA1E03EC5856A12BC /* [CP] Check Pods Manifest.lock */ = {
+		89F81411E9071A4C71A05DA2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,29 +431,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		451DF788ECB110359A522B4B /* [CP] Check Pods Manifest.lock */ = {
+		C9D18301DA60E4E2F0BF9F7A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-castleFortressGame/Pods-castleFortressGame-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-castleFortressGame-castleFortressGameTests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-castleFortressGame/Pods-castleFortressGame-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		64886016909662B7E1E5F1D5 /* [CP] Check Pods Manifest.lock */ = {
+		E01CC78D2633B9CA5C912A98 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -497,22 +471,48 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CF1A46A9B6725F548EBF3577 /* [CP] Copy Pods Resources */ = {
+		E0DDE247AFF7D2E9C5E90ADE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-castleFortressGame/Pods-castleFortressGame-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			inputFileListPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"$(DERIVED_FILE_DIR)/Pods-castleFortressGame-castleFortressGameTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-castleFortressGame/Pods-castleFortressGame-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC90AE6F5E846953AA6E562 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-castleFortressGame-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -608,7 +608,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48E4233F262EEC9F725B2FDD /* Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig */;
+			baseConfigurationReference = 598855E0F3E2A2DCD0789188 /* Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -631,7 +631,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E88D8E0943CD82F13FFA685E /* Pods-castleFortressGame-castleFortressGameTests.release.xcconfig */;
+			baseConfigurationReference = BDA407BA3236DAD2F494D24F /* Pods-castleFortressGame-castleFortressGameTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -651,11 +651,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 372001946906A8BF5C80BA9D /* Pods-castleFortressGame.debug.xcconfig */;
+			baseConfigurationReference = 056D10179DC6736F48B20685 /* Pods-castleFortressGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2N39RD76AF;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = castleFortressGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -665,7 +666,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = castleFortressGame;
+				PRODUCT_NAME = "Castle Fortress";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -674,11 +675,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17ED0F93A7702E64F7FD9CA6 /* Pods-castleFortressGame.release.xcconfig */;
+			baseConfigurationReference = A78F45EFD3B44525A4423E28 /* Pods-castleFortressGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2N39RD76AF;
 				INFOPLIST_FILE = castleFortressGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -687,7 +689,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = castleFortressGame;
+				PRODUCT_NAME = "Castle Fortress";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -695,7 +697,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AFAF4EAEBDC26683174DC21 /* Pods-castleFortressGame-tvOS.debug.xcconfig */;
+			baseConfigurationReference = C189FF1560A1566A06213A40 /* Pods-castleFortressGame-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -723,7 +725,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80FDA0ACECE11D0C515A96FA /* Pods-castleFortressGame-tvOS.release.xcconfig */;
+			baseConfigurationReference = A9F99D24043C03B08BF4B821 /* Pods-castleFortressGame-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -751,7 +753,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86264007A4BEFCC879521E66 /* Pods-castleFortressGame-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = B45A407A706C79E4287FE079 /* Pods-castleFortressGame-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -778,7 +780,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA22A8EC4AC507F98A6D7E16 /* Pods-castleFortressGame-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 93CA53BB146FC0133584A078 /* Pods-castleFortressGame-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 
-import AudioComponent from "./src/components/audio";
+import AudioComponent from "./src/components/radio";
 import LoginScreen from './src/screens/login/login';
 import MainScreen from './src/screens/game/main';
 

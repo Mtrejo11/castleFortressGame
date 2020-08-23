@@ -7,7 +7,9 @@ target 'castleFortressGame' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
-
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-Camera', :path => "../node_modules/react-native-permissions/ios/Camera.podspec"
+  
   pod 'RNAudio', :path => '../node_modules/react-native-audio'
 
   pod 'RNSound', :path => '../node_modules/react-native-sound'
@@ -21,6 +23,10 @@ target 'castleFortressGame' do
   pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
 
   pod 'RNCMaskedView', :path => '../node_modules/@react-native-community/masked-view'
+
+  pod 'RNAudioRecord', :path => '../node_modules/react-native-audio-record'
+
+  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
 
   target 'castleFortressGameTests' do
     inherit! :complete

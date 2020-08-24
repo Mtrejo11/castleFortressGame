@@ -1,26 +1,27 @@
 import React, { Component } from "react";
-import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet } from "react-native";
-import RadioComponent from "../../components/radio";
-import MessagesContainer from "../../components/messages";
+import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet, Image } from "react-native";
+import { MainGameButton } from "../../components/buttons";
+import LinearGradient from 'react-native-linear-gradient';
+import logoMain from '../../assets/images/logo.png'
+import { fonts } from "../../../utils/fonts";
+import { colors } from "../../../utils/colors";
 
 class MainScreen extends Component {
+    _navigateGameHandler = () =>{
+        this.props.navigation.navigate('Game')
+    }
     render() {
         return (
-            <SafeAreaView style={styles.mainContainer}>
-                <View style={styles.gameCanvas}>
+            <LinearGradient colors={['#041936', '#06334f', '#041936']} style={styles.linearGradient}>
 
-                    <Text style={styles.title}>Main Screen</Text>
-                    <View style={styles.charactersContainer}>
-                        <View style={{ width: '60%', height: '100%' }}>
-                            <MessagesContainer />
-                        </View>
-                        <View style={{ width: '40%', height: '100%', backgroundColor: 'blue' }}>
-
-                        </View>
-                    </View>
-                </View>
-                <RadioComponent />
-            </SafeAreaView>
+                <SafeAreaView style={styles.mainContainer}>
+                    <Image source={logoMain} style={{ height: 180, resizeMode: 'contain' }} />
+                    <MainGameButton buttonText={'Play'} buttonAction={this._navigateGameHandler} />
+                    <MainGameButton buttonText={'Instructions'} buttonAction={this._navigateMainHandler} />
+                    <MainGameButton buttonText={'About'} buttonAction={this._navigateMainHandler} />
+                    
+                </SafeAreaView>
+            </LinearGradient>
         )
     }
 }
@@ -41,6 +42,9 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 25,
         fontFamily: 'TitilliumWeb-Light'
+    },
+    linearGradient: {
+        flex: 1,
     },
     charactersContainer: {
         width: '100%',

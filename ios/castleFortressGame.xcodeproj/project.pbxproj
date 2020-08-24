@@ -8,29 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* castleFortressGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* castleFortressGameTests.m */; };
+		0F9E6CEE5E2047AF96B3C461 /* TitilliumWeb-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF3A05D9A8924CB4BB59E75F /* TitilliumWeb-Black.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		19AB2D33757C4DC496D9D8FC /* TitilliumWeb-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 350C9B376C0547A7834B0E8F /* TitilliumWeb-SemiBold.ttf */; };
+		219C3FFEA3DB4DE89EF7D56E /* TitilliumWeb-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0AFC3AC2E8C4D25B0BC72B3 /* TitilliumWeb-SemiBoldItalic.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* castleFortressGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* castleFortressGameTests.m */; };
+		2F507D6B1B4041FCBCDF319B /* TitilliumWeb-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C363F949BA542839D3A8A60 /* TitilliumWeb-ExtraLight.ttf */; };
+		4402049E68E84DB797E91273 /* TitilliumWeb-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E17CFB252034FF9B5FAE7CA /* TitilliumWeb-Italic.ttf */; };
 		6F209C323156D2B04E1B2122 /* libPods-castleFortressGame-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E458D2F4D7423CCDE6F264F /* libPods-castleFortressGame-tvOS.a */; };
+		70B5097B73B340E7B5A80A3C /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D67501C8683460C8BBD7D0F /* TitilliumWeb-Regular.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		82E5E1D9099D36DA15550BF5 /* libPods-castleFortressGame-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 896C4898C72710A514D1C6B6 /* libPods-castleFortressGame-tvOSTests.a */; };
+		88A4B61018A34FE1A2DE6432 /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3EAC7D8DBD4655B4334BB3 /* TitilliumWeb-Bold.ttf */; };
+		A4E9E1F924F337D2000281E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4E9E1F824F337D2000281E3 /* GoogleService-Info.plist */; };
+		B97703159D924A7FA84A6F5C /* TitilliumWeb-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA725CCCC78149B2AB0080BB /* TitilliumWeb-LightItalic.ttf */; };
+		C27CEB0F12404175979302DB /* TitilliumWeb-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDCCFF1BAC644F196A1458A /* TitilliumWeb-ExtraLightItalic.ttf */; };
 		C99C32A4B9F0F6A57E871C6B /* libPods-castleFortressGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE9185FE5A92CBCFE4586E1 /* libPods-castleFortressGame.a */; };
 		D77DF1D1CD4006F90B43C186 /* libPods-castleFortressGame-castleFortressGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FBC58E6793E7D038D87A34 /* libPods-castleFortressGame-castleFortressGameTests.a */; };
-		0F9E6CEE5E2047AF96B3C461 /* TitilliumWeb-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF3A05D9A8924CB4BB59E75F /* TitilliumWeb-Black.ttf */; };
-		88A4B61018A34FE1A2DE6432 /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3EAC7D8DBD4655B4334BB3 /* TitilliumWeb-Bold.ttf */; };
-		EBF55B4DA2D3418EBE9BB33B /* TitilliumWeb-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7E8AA65AAB24A09AA56D11F /* TitilliumWeb-BoldItalic.ttf */; };
-		2F507D6B1B4041FCBCDF319B /* TitilliumWeb-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C363F949BA542839D3A8A60 /* TitilliumWeb-ExtraLight.ttf */; };
-		C27CEB0F12404175979302DB /* TitilliumWeb-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDCCFF1BAC644F196A1458A /* TitilliumWeb-ExtraLightItalic.ttf */; };
-		4402049E68E84DB797E91273 /* TitilliumWeb-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E17CFB252034FF9B5FAE7CA /* TitilliumWeb-Italic.ttf */; };
 		EBF139DF58E54A6CA29D23A2 /* TitilliumWeb-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 290DB6204C104338B7A5DAD1 /* TitilliumWeb-Light.ttf */; };
-		B97703159D924A7FA84A6F5C /* TitilliumWeb-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA725CCCC78149B2AB0080BB /* TitilliumWeb-LightItalic.ttf */; };
-		70B5097B73B340E7B5A80A3C /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D67501C8683460C8BBD7D0F /* TitilliumWeb-Regular.ttf */; };
-		19AB2D33757C4DC496D9D8FC /* TitilliumWeb-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 350C9B376C0547A7834B0E8F /* TitilliumWeb-SemiBold.ttf */; };
-		219C3FFEA3DB4DE89EF7D56E /* TitilliumWeb-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0AFC3AC2E8C4D25B0BC72B3 /* TitilliumWeb-SemiBoldItalic.ttf */; };
+		EBF55B4DA2D3418EBE9BB33B /* TitilliumWeb-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7E8AA65AAB24A09AA56D11F /* TitilliumWeb-BoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,32 +64,33 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = castleFortressGame/main.m; sourceTree = "<group>"; };
 		1C755F1E1D90E6D48D45A2E4 /* Pods-castleFortressGame-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-tvOSTests/Pods-castleFortressGame-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		267A7D27979A9AB68EC5E62A /* Pods-castleFortressGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame.release.xcconfig"; path = "Target Support Files/Pods-castleFortressGame/Pods-castleFortressGame.release.xcconfig"; sourceTree = "<group>"; };
+		290DB6204C104338B7A5DAD1 /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-Light.ttf"; path = "../src/assets/fonts/TitilliumWeb-Light.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* castleFortressGame-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "castleFortressGame-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* castleFortressGame-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "castleFortressGame-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		350C9B376C0547A7834B0E8F /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-SemiBold.ttf"; path = "../src/assets/fonts/TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; };
 		5B8D02A28368253D7BA1D9D8 /* Pods-castleFortressGame-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-tvOS/Pods-castleFortressGame-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		635DA7FAD01F2FDDB1F1618F /* Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-castleFortressGameTests/Pods-castleFortressGame-castleFortressGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C363F949BA542839D3A8A60 /* TitilliumWeb-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-ExtraLight.ttf"; path = "../src/assets/fonts/TitilliumWeb-ExtraLight.ttf"; sourceTree = "<group>"; };
+		6D67501C8683460C8BBD7D0F /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-Regular.ttf"; path = "../src/assets/fonts/TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = castleFortressGame/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896C4898C72710A514D1C6B6 /* libPods-castleFortressGame-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E458D2F4D7423CCDE6F264F /* libPods-castleFortressGame-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3EAC7D8DBD4655B4334BB3 /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-Bold.ttf"; path = "../src/assets/fonts/TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
+		9E17CFB252034FF9B5FAE7CA /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-Italic.ttf"; path = "../src/assets/fonts/TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
+		A4E9E1F824F337D2000281E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7E8AA65AAB24A09AA56D11F /* TitilliumWeb-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-BoldItalic.ttf"; path = "../src/assets/fonts/TitilliumWeb-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AA725CCCC78149B2AB0080BB /* TitilliumWeb-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-LightItalic.ttf"; path = "../src/assets/fonts/TitilliumWeb-LightItalic.ttf"; sourceTree = "<group>"; };
 		AAA1A3F87833615656993B90 /* Pods-castleFortressGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame.debug.xcconfig"; path = "Target Support Files/Pods-castleFortressGame/Pods-castleFortressGame.debug.xcconfig"; sourceTree = "<group>"; };
+		ACDCCFF1BAC644F196A1458A /* TitilliumWeb-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-ExtraLightItalic.ttf"; path = "../src/assets/fonts/TitilliumWeb-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		BF3A05D9A8924CB4BB59E75F /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-Black.ttf"; path = "../src/assets/fonts/TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
 		BFE9185FE5A92CBCFE4586E1 /* libPods-castleFortressGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06A9F80A9A59BC4C4883308 /* Pods-castleFortressGame-castleFortressGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-castleFortressGameTests.release.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-castleFortressGameTests/Pods-castleFortressGame-castleFortressGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		DAE58B1D74FF12FF507AA030 /* Pods-castleFortressGame-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-tvOS.release.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-tvOS/Pods-castleFortressGame-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		E5FBC58E6793E7D038D87A34 /* libPods-castleFortressGame-castleFortressGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame-castleFortressGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F0AFC3AC2E8C4D25B0BC72B3 /* TitilliumWeb-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-SemiBoldItalic.ttf"; path = "../src/assets/fonts/TitilliumWeb-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		FFEB9385660791796F7BF71C /* Pods-castleFortressGame-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-castleFortressGame-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-castleFortressGame-tvOSTests/Pods-castleFortressGame-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		BF3A05D9A8924CB4BB59E75F /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-Black.ttf"; path = "../src/assets/fonts/TitilliumWeb-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9B3EAC7D8DBD4655B4334BB3 /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-Bold.ttf"; path = "../src/assets/fonts/TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A7E8AA65AAB24A09AA56D11F /* TitilliumWeb-BoldItalic.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-BoldItalic.ttf"; path = "../src/assets/fonts/TitilliumWeb-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6C363F949BA542839D3A8A60 /* TitilliumWeb-ExtraLight.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-ExtraLight.ttf"; path = "../src/assets/fonts/TitilliumWeb-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		ACDCCFF1BAC644F196A1458A /* TitilliumWeb-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-ExtraLightItalic.ttf"; path = "../src/assets/fonts/TitilliumWeb-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9E17CFB252034FF9B5FAE7CA /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-Italic.ttf"; path = "../src/assets/fonts/TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		290DB6204C104338B7A5DAD1 /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-Light.ttf"; path = "../src/assets/fonts/TitilliumWeb-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AA725CCCC78149B2AB0080BB /* TitilliumWeb-LightItalic.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-LightItalic.ttf"; path = "../src/assets/fonts/TitilliumWeb-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6D67501C8683460C8BBD7D0F /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-Regular.ttf"; path = "../src/assets/fonts/TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		350C9B376C0547A7834B0E8F /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-SemiBold.ttf"; path = "../src/assets/fonts/TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F0AFC3AC2E8C4D25B0BC72B3 /* TitilliumWeb-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-SemiBoldItalic.ttf"; path = "../src/assets/fonts/TitilliumWeb-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,10 +154,29 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				A4E9E1F824F337D2000281E3 /* GoogleService-Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = castleFortressGame;
+			sourceTree = "<group>";
+		};
+		188606A2603F48F7ABEE99A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF3A05D9A8924CB4BB59E75F /* TitilliumWeb-Black.ttf */,
+				9B3EAC7D8DBD4655B4334BB3 /* TitilliumWeb-Bold.ttf */,
+				A7E8AA65AAB24A09AA56D11F /* TitilliumWeb-BoldItalic.ttf */,
+				6C363F949BA542839D3A8A60 /* TitilliumWeb-ExtraLight.ttf */,
+				ACDCCFF1BAC644F196A1458A /* TitilliumWeb-ExtraLightItalic.ttf */,
+				9E17CFB252034FF9B5FAE7CA /* TitilliumWeb-Italic.ttf */,
+				290DB6204C104338B7A5DAD1 /* TitilliumWeb-Light.ttf */,
+				AA725CCCC78149B2AB0080BB /* TitilliumWeb-LightItalic.ttf */,
+				6D67501C8683460C8BBD7D0F /* TitilliumWeb-Regular.ttf */,
+				350C9B376C0547A7834B0E8F /* TitilliumWeb-SemiBold.ttf */,
+				F0AFC3AC2E8C4D25B0BC72B3 /* TitilliumWeb-SemiBoldItalic.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -220,25 +241,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		188606A2603F48F7ABEE99A1 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				BF3A05D9A8924CB4BB59E75F /* TitilliumWeb-Black.ttf */,
-				9B3EAC7D8DBD4655B4334BB3 /* TitilliumWeb-Bold.ttf */,
-				A7E8AA65AAB24A09AA56D11F /* TitilliumWeb-BoldItalic.ttf */,
-				6C363F949BA542839D3A8A60 /* TitilliumWeb-ExtraLight.ttf */,
-				ACDCCFF1BAC644F196A1458A /* TitilliumWeb-ExtraLightItalic.ttf */,
-				9E17CFB252034FF9B5FAE7CA /* TitilliumWeb-Italic.ttf */,
-				290DB6204C104338B7A5DAD1 /* TitilliumWeb-Light.ttf */,
-				AA725CCCC78149B2AB0080BB /* TitilliumWeb-LightItalic.ttf */,
-				6D67501C8683460C8BBD7D0F /* TitilliumWeb-Regular.ttf */,
-				350C9B376C0547A7834B0E8F /* TitilliumWeb-SemiBold.ttf */,
-				F0AFC3AC2E8C4D25B0BC72B3 /* TitilliumWeb-SemiBoldItalic.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,6 +275,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				47D1FAEF6E81E1A6F46F5AED /* [CP] Copy Pods Resources */,
+				3B82D4AADDF0A3F42D6B88F8 /* [CP-User] [RNFB] Core Configuration */,
 			);
 			buildRules = (
 			);
@@ -395,6 +398,7 @@
 				70B5097B73B340E7B5A80A3C /* TitilliumWeb-Regular.ttf in Resources */,
 				19AB2D33757C4DC496D9D8FC /* TitilliumWeb-SemiBold.ttf in Resources */,
 				219C3FFEA3DB4DE89EF7D56E /* TitilliumWeb-SemiBoldItalic.ttf in Resources */,
+				A4E9E1F924F337D2000281E3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +470,16 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		3B82D4AADDF0A3F42D6B88F8 /* [CP-User] [RNFB] Core Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] [RNFB] Core Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    _JSON_OUTPUT_BASE64=$(python -c 'import json,sys,base64;print(base64.b64encode(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"').read())['${_JSON_ROOT}'])))' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes usful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\n\n  # config.admob_delay_app_measurement_init\n  _ADMOB_DELAY_APP_MEASUREMENT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"admob_delay_app_measurement_init\")\n  if [[ $_ADMOB_DELAY_APP_MEASUREMENT == \"true\" ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GADDelayAppMeasurementInit\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"YES\")\n  fi\n\n  # config.admob_ios_app_id\n  _ADMOB_IOS_APP_ID=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"admob_ios_app_id\")\n  if [[ $_ADMOB_IOS_APP_ID ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GADApplicationIdentifier\")\n    _PLIST_ENTRY_TYPES+=(\"string\")\n    _PLIST_ENTRY_VALUES+=(\"$_ADMOB_IOS_APP_ID\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally \n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n\n";
+		};
 		3F1A3E8AA8FA02191B5DDB0F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -496,10 +510,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-castleFortressGame/Pods-castleFortressGame-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates-Cpp.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Cpp.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -558,10 +574,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-castleFortressGame-castleFortressGameTests/Pods-castleFortressGame-castleFortressGameTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates-Cpp.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Cpp.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -718,7 +736,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.castlefortress.hackaton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.castlefortress.hackathon;
 				PRODUCT_NAME = "Castle Fortress";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -741,7 +759,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.castlefortress.hackaton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.castlefortress.hackathon;
 				PRODUCT_NAME = "Castle Fortress";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

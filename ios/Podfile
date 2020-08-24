@@ -28,6 +28,20 @@ target 'castleFortressGame' do
 
   pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
 
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
+  # Firebase Configuration
+  
+  pod 'Firebase/Analytics'
+
+  pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app'
+
+  pod 'RNFBFirestore', :path => '../node_modules/@react-native-firebase/firestore'
+
+  pod 'RNFBAuth', :path => '../node_modules/@react-native-firebase/auth'
+
+  pod 'RNFBFunctions', :path => '../node_modules/@react-native-firebase/functions'
+
   target 'castleFortressGameTests' do
     inherit! :complete
     # Pods for testing

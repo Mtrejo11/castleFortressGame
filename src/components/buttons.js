@@ -6,7 +6,7 @@ import { color } from "react-native-reanimated";
 
 export const MainButton = props => {
     return (
-        <TouchableOpacity style={styles.buttonContainer} onPress={props.buttonAction} disabled={props.loadingmtre}>
+        <TouchableOpacity style={props.disabled ? styles.buttonContainerDisabled : styles.buttonContainer} onPress={props.buttonAction} disabled={props.loading || props.disabled}>
             {
                 props.loading ?
                     <ActivityIndicator color={colors.white} /> :
@@ -28,6 +28,15 @@ export const MainGameButton = props => {
 const styles = StyleSheet.create({
     buttonContainer: {
         backgroundColor: colors.secondBlue,
+        borderRadius: 10,
+        width: '80%',
+        height: 40,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 50
+    },
+    buttonContainerDisabled: {
+        backgroundColor: colors.disabled,
         borderRadius: 10,
         width: '80%',
         height: 40,

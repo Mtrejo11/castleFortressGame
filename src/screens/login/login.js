@@ -25,7 +25,7 @@ class LoginScreen extends Component {
     _loginHandler = async () => {
         this.setState({ loadingAction: true })
         try {
-            const signedIn = await auth().signInWithEmailAndPassword(this.state.email, this.state.password)
+            const signedIn = await auth().signInWithEmailAndPassword(this.state.email.trim(), this.state.password.trim())
             console.log('SIGNED IN', signedIn);
             this.setState({ ...initState })
 

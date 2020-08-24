@@ -4,5 +4,5 @@ export const colors = {
     yellowText: '#EDFC3F',
     white: '#E5E5E5',
     thirdBlue: '#2C45E1',
-
+    disabled: '#B5B5B5'
 }

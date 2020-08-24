@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet, Image, Alert } from "react-native";
+import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet, Image, Alert, Platform, KeyboardAvoidingView } from "react-native";
 import { MainButton } from "../../components/buttons";
 import LinearGradient from 'react-native-linear-gradient';
 import logoMain from '../../assets/images/logo.png'
@@ -50,14 +50,19 @@ class LoginScreen extends Component {
         return (
             <LinearGradient colors={['#041936', '#06334f', '#041936']} style={styles.linearGradient}>
 
-                <SafeAreaView style={styles.mainContainer}>
-                    <Image source={logoMain} style={{ height: 180, resizeMode: 'contain' }} />
-                    <FormInput placeholder="Email" type={'text'} value={this.state.email} changeHandler={value => this._changeHandler('email', value)} />
-                    <FormInput placeholder="Password" type={'password'} value={this.state.password} changeHandler={value => this._changeHandler('password', value)} />
-                    <MainButton buttonText={'Login'} buttonAction={this._loginHandler} loading={this.state.loadingAction} />
-                    <View style={{ flexDirection: 'row', marginTop: 30 }}>
-                        <Text style={{ fontFamily: fonts.fontRegular, color: colors.white, marginRight: 6 }}>¿Don't have an account yet? </Text><TouchableOpacity onPress={() => this.props.navigation.navigate('Register')}><Text style={{ fontFamily: fonts.fontBold, color: '#2C45E1' }}>Register</Text></TouchableOpacity>
-                    </View>
+                <SafeAreaView style={{ flex: 1 }}>
+                    <KeyboardAvoidingView
+                        behavior={Platform.OS == "ios" ? "padding" : "height"}
+                        style={styles.mainContainer}
+                    >
+                        <Image source={logoMain} style={{ height: 180, resizeMode: 'contain' }} />
+                        <FormInput placeholder="Email" type={'text'} value={this.state.email} changeHandler={value => this._changeHandler('email', value)} />
+                        <FormInput placeholder="Password" type={'password'} value={this.state.password} changeHandler={value => this._changeHandler('password', value)} />
+                        <MainButton buttonText={'Login'} buttonAction={this._loginHandler} loading={this.state.loadingAction} />
+                        <View style={{ flexDirection: 'row', marginTop: 30 }}>
+                            <Text style={{ fontFamily: fonts.fontRegular, color: colors.white, marginRight: 6 }}>¿Don't have an account yet? </Text><TouchableOpacity onPress={() => this.props.navigation.navigate('Register')}><Text style={{ fontFamily: fonts.fontBold, color: '#2C45E1' }}>Register</Text></TouchableOpacity>
+                        </View>
+                    </KeyboardAvoidingView>
                 </SafeAreaView>
             </LinearGradient>
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet, Image, KeyboardAvoidingView, Alert } from "react-native";
+import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet, Image, KeyboardAvoidingView, Alert, Platform } from "react-native";
 import { MainButton } from "../../components/buttons";
 import LinearGradient from 'react-native-linear-gradient';
 import logoMain from '../../assets/images/logo.png'

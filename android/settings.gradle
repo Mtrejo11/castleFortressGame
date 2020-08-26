@@ -1,4 +1,6 @@
 rootProject.name = 'castleFortressGame'
+include ':react-native-fs'
+project(':react-native-fs').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fs/android')
 include ':@react-native-firebase_functions'
 project(':@react-native-firebase_functions').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/functions/android')
 include ':@react-native-firebase_auth'

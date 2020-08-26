@@ -58,7 +58,7 @@ class LoginScreen extends Component {
                         <Image source={logoMain} style={{ height: 180, resizeMode: 'contain' }} />
                         <FormInput placeholder="Email" type={'text'} value={this.state.email} changeHandler={value => this._changeHandler('email', value)} />
                         <FormInput placeholder="Password" type={'password'} value={this.state.password} changeHandler={value => this._changeHandler('password', value)} />
-                        <MainButton buttonText={'Login'} buttonAction={this._loginHandler} loading={this.state.loadingAction} />
+                        <MainButton buttonText={'Login'} buttonAction={this._navigateMainHandler} loading={this.state.loadingAction} />
                         <View style={{ flexDirection: 'row', marginTop: 30 }}>
                             <Text style={{ fontFamily: fonts.fontRegular, color: colors.white, marginRight: 6 }}>¿Don't have an account yet? </Text><TouchableOpacity onPress={() => this.props.navigation.navigate('Register')}><Text style={{ fontFamily: fonts.fontBold, color: '#2C45E1' }}>Register</Text></TouchableOpacity>
                         </View>

@@ -4,6 +4,10 @@ import { Buffer } from 'buffer';
 import Permissions from 'react-native-permissions';
 import Sound from 'react-native-sound';
 import AudioRecord from 'react-native-audio-record';
+import toWav from 'audiobuffer-to-wav'
+import RNFS from 'react-native-fs'
+import { decode, encode } from 'base-64'
+import auth from '@react-native-firebase/auth'
 import { SEND_AUDIO } from '../../utils/requests'
 
 export default class RadioComponent extends Component {
@@ -60,15 +64,44 @@ export default class RadioComponent extends Component {
     let audioFile = await AudioRecord.stop();
     console.log('audioFile', audioFile);
     this.setState({ audioFile, recording: false });
-
+    // const token = await auth().currentUser.getIdToken()
     const sentFile = await SEND_AUDIO(audioFile);
     if (sentFile.status) {
-      console.log('RESPONSE FROM API', sentFile);
+      // console.log('RESPONSE FROM API', sentFile);
+      this.playResponse(sentFile.message.speech.audioContent)
     }
     else {
       console.log('SOMETHING WENT WRONG');
     }
   };
+
+  loadResponse = async buffer => {
+    console.log('LOADING RESPONSE');
+
+    try {
+      const fileCreated = this.arrayBufferToBase64(buffer.data)
+      console.log('FILE CREATED', fileCreated);
+      let path = `${RNFS.DocumentDirectoryPath}/response.mp3`;
+      RNFS.writeFile(path, fileCreated, 'base64').then(() => playSound())
+      const playSound = () => {
+        const sound = new Sound(path, '', () => callback(sound))
+      }
+      const callback = (sound) => sound.play(success => {
+        if (success) {
+          console.log('successfully finished playing');
+        } else {
+          console.log('playback failed due to audio decoding errors');
+        }
+        this.setState({ paused: true });
+        // this.sound.release();
+      })
+    } catch (error) {
+      console.log('ERROR', error);
+      return error
+    }
+
+  }
+
 
   load = () => {
     return new Promise((resolve, reject) => {
@@ -86,6 +119,38 @@ export default class RadioComponent extends Component {
       });
     });
   };
+  arrayBufferToBase64 = (buffer) => {
+    var binary = '';
+    var bytes = new Uint8Array(buffer);
+    var len = bytes.byteLength;
+    for (var i = 0; i < len; i++) {
+      binary += String.fromCharCode(bytes[i]);
+    }
+    return encode(binary);
+  }
+
+  playResponse = async (buffer) => {
+    if (!this.state.loaded) {
+      try {
+        await this.loadResponse(buffer);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    this.setState({ paused: false });
+    Sound.setCategory('Playback');
+
+    this.sound.play(success => {
+      if (success) {
+        console.log('successfully finished playing');
+      } else {
+        console.log('playback failed due to audio decoding errors');
+      }
+      this.setState({ paused: true });
+      // this.sound.release();
+    });
+  };
 
   play = async () => {
     if (!this.state.loaded) {
@@ -98,7 +163,7 @@ export default class RadioComponent extends Component {
 
     this.setState({ paused: false });
     Sound.setCategory('Playback');
-
+    console.log('CURRENTLY PLAYING', this.sound);
     this.sound.play(success => {
       if (success) {
         console.log('successfully finished playing');

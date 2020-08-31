@@ -8,7 +8,7 @@ import toWav from 'audiobuffer-to-wav'
 import RNFS from 'react-native-fs'
 import { decode, encode } from 'base-64'
 import auth from '@react-native-firebase/auth'
-import { SEND_AUDIO } from '../../utils/requests'
+import { SEND_AUDIO, SEND_AUDIO_test } from '../../utils/requests'
 import speakIcon from '../assets/images/speak.png'
 import cluesIcon from '../assets/images/clues.png'
 import rightArrow from '../assets/images/right_arrow.png'
@@ -76,8 +76,8 @@ export default class RadioComponent extends Component {
     let audioFile = await AudioRecord.stop();
     console.log('audioFile', audioFile);
     this.setState({ audioFile, recording: false });
-    // const token = await auth().currentUser.getIdToken()
-    const sentFile = await SEND_AUDIO(audioFile);
+    const token = await auth().currentUser.getIdToken()
+    const sentFile = await SEND_AUDIO_test(token, audioFile);
     if (sentFile.status) {
       // console.log('RESPONSE FROM API', sentFile);
       this.playResponse(sentFile.message.speech.audioContent)

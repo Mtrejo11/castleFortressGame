@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet } from "react-native";
 import RadioComponent from "../../components/radio";
 import MessagesContainer from "../../components/messages";
+import LinearGradient from "react-native-linear-gradient";
 
 class MainScreen extends Component {
     render() {
         return (
+            <LinearGradient colors={['#041936', '#06334f', '#041936']} style={styles.linearGradient}>
+            
             <SafeAreaView style={styles.mainContainer}>
                 <View style={styles.gameCanvas}>
 
@@ -21,6 +24,7 @@ class MainScreen extends Component {
                 </View>
                 <RadioComponent />
             </SafeAreaView>
+            </LinearGradient>
         )
     }
 }
@@ -35,7 +39,6 @@ const styles = StyleSheet.create({
     },
     gameCanvas: {
         flex: 3,
-        backgroundColor: 'lightblue',
         width: '100%',
     },
     title: {
@@ -48,6 +51,9 @@ const styles = StyleSheet.create({
         bottom: 0,
         height: '35%',
         flexDirection: 'row'
+    },
+    linearGradient: {
+        flex: 1,
     },
 })
 

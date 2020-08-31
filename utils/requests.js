@@ -22,6 +22,7 @@ export const SEND_AUDIO = async (urlaudio) => {
     try {
         const file = await RNFS.readFile(urlaudio, 'base64')
         const buffered = Buffer.from(file, 'base64')
+        console.log('BUFFERED', buffered);
         const myHeaders = new Headers();
         myHeaders.append("Content-Type", "audio/wave");
 

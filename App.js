@@ -5,22 +5,29 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import AudioComponent from "./src/components/radio";
 import LoginScreen from './src/screens/login/login';
+import LoadingScreen from './src/screens/login/loading';
 import MainScreen from './src/screens/game/main';
 import GameScreen from './src/screens/game/game';
 import RegisterScreen from './src/screens/login/register';
+import AppProvider, {AppContext} from './src/context/provider'
 
-export const CurrentUser = React.createContext('user')
 
 const Stack = createStackNavigator();
 
 
 const App = () => {
   return (
-    <CurrentUser.Provider value='something'>
+    <AppProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName='Login'>
+        <Stack.Navigator initialRouteName='Loading'>
           <Stack.Screen name="Login"
             component={LoginScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
+           <Stack.Screen name="Loading"
+            component={LoadingScreen}
             options={{
               headerShown: false,
             }}
@@ -46,7 +53,7 @@ const App = () => {
         </Stack.Navigator>
       </NavigationContainer>
 
-    </CurrentUser.Provider>
+    </AppProvider>
   )
 }
 

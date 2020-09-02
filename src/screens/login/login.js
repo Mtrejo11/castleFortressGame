@@ -7,6 +7,7 @@ import { fonts } from "../../../utils/fonts";
 import { colors } from "../../../utils/colors";
 import { FormInput } from "../../components/inputs";
 import auth from '@react-native-firebase/auth'
+import { AppContext } from '../../context/provider'
 
 const initState = {
     email: '',
@@ -23,12 +24,13 @@ class LoginScreen extends Component {
     }
 
     _loginHandler = async () => {
+        console.log('PROPS', this.props.context);
         this.setState({ loadingAction: true })
         try {
             const signedIn = await auth().signInWithEmailAndPassword(this.state.email.trim(), this.state.password.trim())
             console.log('SIGNED IN', signedIn);
             this.setState({ ...initState })
-
+            await this.props.context.saveToken(signedIn.user.uid)
             this._navigateMainHandler()
         } catch (error) {
             console.log('ERROR', error);
@@ -47,6 +49,7 @@ class LoginScreen extends Component {
     }
 
     render() {
+        console.log('THIS PROPS', this.props);
         return (
             <LinearGradient colors={['#041936', '#06334f', '#041936']} style={styles.linearGradient}>
 
@@ -58,7 +61,7 @@ class LoginScreen extends Component {
                         <Image source={logoMain} style={{ height: 180, resizeMode: 'contain' }} />
                         <FormInput placeholder="Email" type={'text'} value={this.state.email} changeHandler={value => this._changeHandler('email', value)} />
                         <FormInput placeholder="Password" type={'password'} value={this.state.password} changeHandler={value => this._changeHandler('password', value)} />
-                        <MainButton buttonText={'Login'} buttonAction={this._navigateMainHandler} loading={this.state.loadingAction} />
+                        <MainButton buttonText={'Login'} buttonAction={this._loginHandler} loading={this.state.loadingAction} />
                         <View style={{ flexDirection: 'row', marginTop: 30 }}>
                             <Text style={{ fontFamily: fonts.fontRegular, color: colors.white, marginRight: 6 }}>¿Don't have an account yet? </Text><TouchableOpacity onPress={() => this.props.navigation.navigate('Register')}><Text style={{ fontFamily: fonts.fontBold, color: '#2C45E1' }}>Register</Text></TouchableOpacity>
                         </View>
@@ -69,6 +72,22 @@ class LoginScreen extends Component {
         )
     }
 }
+const ForwardRef = React.forwardRef((props, ref) => (
+    <AppContext.Consumer>
+        {context => {
+            return <LoginScreen context={context} {...props} />
+        }}
+    </AppContext.Consumer>
+));
+
+export default ({ navigation }) => (
+
+    <ForwardRef
+        navigation={navigation}
+    />
+
+
+)
 
 const styles = StyleSheet.create({
     mainContainer: {
@@ -86,4 +105,3 @@ const styles = StyleSheet.create({
     }
 })
 
-export default LoginScreen

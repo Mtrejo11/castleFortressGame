@@ -4,7 +4,6 @@ import { Buffer } from 'buffer';
 import Permissions, { PERMISSIONS } from 'react-native-permissions';
 import Sound from 'react-native-sound';
 import AudioRecord from 'react-native-audio-record';
-import toWav from 'audiobuffer-to-wav'
 import RNFS from 'react-native-fs'
 import { decode, encode } from 'base-64'
 import auth from '@react-native-firebase/auth'
@@ -16,7 +15,6 @@ import leftArrow from '../assets/images/left_arrow.png'
 import { colors } from '../../utils/colors';
 import { fonts } from '../../utils/fonts';
 
-Permissions.PERMISSIONS.ANDROID.RECORD_AUDIO
 
 
 export default class RadioComponent extends Component {
@@ -48,10 +46,8 @@ export default class RadioComponent extends Component {
   }
 
   checkPermission = async () => {
-    console.log('CHECKING PERMISSIONS');
     const permission = Platform.OS === 'ios' ? PERMISSIONS.IOS.MICROPHONE : PERMISSIONS.ANDROID.RECORD_AUDIO
     const p = await Permissions.check(permission);
-    console.log('permission check', p);
     if (p === 'authorized') return;
     return this.requestPermission();
   };
@@ -59,7 +55,6 @@ export default class RadioComponent extends Component {
   requestPermission = async () => {
     const permission = Platform.OS === 'ios' ? PERMISSIONS.IOS.MICROPHONE : PERMISSIONS.ANDROID.RECORD_AUDIO
     const p = await Permissions.request(permission);
-    console.log('permission request', p);
 
   };
 

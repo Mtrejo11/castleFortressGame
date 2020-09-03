@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet, Image } from "react-native";
+import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet, Image, Button } from "react-native";
 import { MainGameButton } from "../../components/buttons";
 import LinearGradient from 'react-native-linear-gradient';
 import logoMain from '../../assets/images/logo.png'
 import { fonts } from "../../../utils/fonts";
 import { colors } from "../../../utils/colors";
-
+import { PLAY_SOUND } from "../../../utils/sound_effects";
 class MainScreen extends Component {
     _navigateGameHandler = () =>{
         this.props.navigation.navigate('Game')
@@ -19,7 +19,7 @@ class MainScreen extends Component {
                     <MainGameButton buttonText={'Play'} buttonAction={this._navigateGameHandler} />
                     <MainGameButton buttonText={'Instructions'} buttonAction={this._navigateMainHandler} />
                     <MainGameButton buttonText={'About'} buttonAction={this._navigateMainHandler} />
-                    
+                    <Button title='PLAY SOUND' onPress={PLAY_SOUND}></Button>
                 </SafeAreaView>
             </LinearGradient>
         )

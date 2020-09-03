@@ -25,6 +25,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		82E5E1D9099D36DA15550BF5 /* libPods-castleFortressGame-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 896C4898C72710A514D1C6B6 /* libPods-castleFortressGame-tvOSTests.a */; };
 		88A4B61018A34FE1A2DE6432 /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3EAC7D8DBD4655B4334BB3 /* TitilliumWeb-Bold.ttf */; };
+		A443A29F2500A9DC00003836 /* phone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A443A29E2500A9DC00003836 /* phone.mp3 */; };
 		A4E9E1F924F337D2000281E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4E9E1F824F337D2000281E3 /* GoogleService-Info.plist */; };
 		B97703159D924A7FA84A6F5C /* TitilliumWeb-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA725CCCC78149B2AB0080BB /* TitilliumWeb-LightItalic.ttf */; };
 		C27CEB0F12404175979302DB /* TitilliumWeb-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDCCFF1BAC644F196A1458A /* TitilliumWeb-ExtraLightItalic.ttf */; };
@@ -77,6 +78,7 @@
 		8E458D2F4D7423CCDE6F264F /* libPods-castleFortressGame-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-castleFortressGame-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3EAC7D8DBD4655B4334BB3 /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-Bold.ttf"; path = "../src/assets/fonts/TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
 		9E17CFB252034FF9B5FAE7CA /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-Italic.ttf"; path = "../src/assets/fonts/TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
+		A443A29E2500A9DC00003836 /* phone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = phone.mp3; path = ../src/assets/sounds/phone.mp3; sourceTree = "<group>"; };
 		A4E9E1F824F337D2000281E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A7E8AA65AAB24A09AA56D11F /* TitilliumWeb-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-BoldItalic.ttf"; path = "../src/assets/fonts/TitilliumWeb-BoldItalic.ttf"; sourceTree = "<group>"; };
 		AA725CCCC78149B2AB0080BB /* TitilliumWeb-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-LightItalic.ttf"; path = "../src/assets/fonts/TitilliumWeb-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				BF3A05D9A8924CB4BB59E75F /* TitilliumWeb-Black.ttf */,
+				A443A29E2500A9DC00003836 /* phone.mp3 */,
 				9B3EAC7D8DBD4655B4334BB3 /* TitilliumWeb-Bold.ttf */,
 				A7E8AA65AAB24A09AA56D11F /* TitilliumWeb-BoldItalic.ttf */,
 				6C363F949BA542839D3A8A60 /* TitilliumWeb-ExtraLight.ttf */,
@@ -385,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A443A29F2500A9DC00003836 /* phone.mp3 in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				0F9E6CEE5E2047AF96B3C461 /* TitilliumWeb-Black.ttf in Resources */,
@@ -432,7 +436,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		0D8D21CC46D801CB7B58663A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

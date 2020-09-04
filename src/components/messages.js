@@ -52,7 +52,8 @@ export default class MessagesContainer extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        paddingHorizontal: 8
     },
     row: {
         flexDirection: 'row',

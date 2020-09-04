@@ -8,6 +8,7 @@ import RNFS from 'react-native-fs'
 import { decode, encode } from 'base-64'
 import { SEND_AUDIO_GAME } from '../../utils/requests'
 import speakIcon from '../assets/images/speak.png'
+import stopIcon from '../assets/images/stopIcon.png'
 import cluesIcon from '../assets/images/clues.png'
 import rightArrow from '../assets/images/right_arrow.png'
 import leftArrow from '../assets/images/left_arrow.png'
@@ -206,9 +207,15 @@ export default class RadioComponent extends Component {
             <TouchableOpacity style={{ width: 60, height: 60 }}>
               <Image source={cluesIcon} style={{ width: 'auto', height: '100%', resizeMode: 'contain' }} />
             </TouchableOpacity>
-            <TouchableOpacity style={{ width: 60, height: 60 }} onPressIn={this.start} onPressOut={this.stop}>
-              <Image source={speakIcon} style={{ width: 'auto', height: '100%', resizeMode: 'contain' }} />
-            </TouchableOpacity>
+            {
+              !this.state.recording ? <TouchableOpacity style={{ width: 60, height: 60 }} onPress={this.start} >
+                <Image source={speakIcon} style={{ width: 'auto', height: '100%', resizeMode: 'contain' }} />
+              </TouchableOpacity>
+                :
+                <TouchableOpacity style={{ width: 60, height: 60 }} onPress={this.stop}>
+                  <Image source={stopIcon} style={{ width: 'auto', height: '100%', resizeMode: 'contain' }} />
+                </TouchableOpacity>
+            }
           </View>
         </View>
       </View>

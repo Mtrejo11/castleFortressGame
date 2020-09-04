@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet, Image } from "react-native";
+import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet, Image, ImageBackground } from "react-native";
 import RadioComponent from "../../components/radio";
 import MessagesContainer from "../../components/messages";
 import LinearGradient from "react-native-linear-gradient";
-
+import shadowBox from '../../assets/images/shadow.png'
 import { CHARACTERS, SCENARIOS } from "../../../utils/assets";
 
 
@@ -42,20 +42,26 @@ class MainScreen extends Component {
 
                 <SafeAreaView style={styles.mainContainer}>
                     <View style={styles.gameCanvas}>
+                        <ImageBackground
+                            source={SCENARIOS[3]}
+                            style={styles.image}
+                        >
 
-                        <Text style={styles.title}>Main Screen</Text>
-                        <View style={styles.charactersContainer}>
-                            <View style={{ width: '60%', height: '100%', paddingHorizontal: 8 }}>
-                                <MessagesContainer messages={this.state.messages} changeFlag={this.state.messagesFlag} />
+
+                            <View style={styles.charactersContainer}>
+                                <View style={{ width: '60%', height: '100%', }}>
+                                    <MessagesContainer messages={this.state.messages} changeFlag={this.state.messagesFlag} />
+                                    {
+                                        this.state.messages.length > 0 ? <Image source={shadowBox} style={{ height: '100%', width: '100%', position: 'absolute', }} /> : null
+                                    }
+                                </View>
+                                <View style={{ width: '40%', height: '100%', }}>
+                                    {
+                                        this.state.currentAvatar ? <Image source={this.state.currentAvatar} style={{ maxWidth: '100%', maxHeight: '100%' }} /> : null
+                                    }
+                                </View>
                             </View>
-                            <View style={{ width: '40%', height: '100%', }}>
-                                {
-                                    this.state.currentAvatar ?
-                                        <Image source={this.state.currentAvatar} style={{ maxWidth: '100%', maxHeight: '100%' }} />
-                                        : null
-                                }
-                            </View>
-                        </View>
+                        </ImageBackground>
                     </View>
                     <RadioComponent onMessage={this._onMessageHandler} />
                 </SafeAreaView>
@@ -89,6 +95,10 @@ const styles = StyleSheet.create({
     },
     linearGradient: {
         flex: 1,
+    },
+    image: {
+        flex: 1,
+        resizeMode: "cover",
     },
 })
 

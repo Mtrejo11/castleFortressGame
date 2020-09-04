@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Button, StatusBar, TouchableOpacity, Image, Text, Platform } from 'react-native';
+import { StyleSheet, View, Button, StatusBar, TouchableOpacity, Image, Text, Platform, Alert } from 'react-native';
 import { Buffer } from 'buffer';
 import Permissions, { PERMISSIONS } from 'react-native-permissions';
 import Sound from 'react-native-sound';
 import AudioRecord from 'react-native-audio-record';
 import RNFS from 'react-native-fs'
 import { decode, encode } from 'base-64'
-import auth from '@react-native-firebase/auth'
-import { SEND_AUDIO, SEND_AUDIO_test } from '../../utils/requests'
+import { SEND_AUDIO_GAME } from '../../utils/requests'
 import speakIcon from '../assets/images/speak.png'
 import cluesIcon from '../assets/images/clues.png'
 import rightArrow from '../assets/images/right_arrow.png'
@@ -72,12 +71,14 @@ export default class RadioComponent extends Component {
     console.log('audioFile', audioFile);
     this.setState({ audioFile, recording: false });
     // const token = await auth().currentUser.getIdToken()
-    const sentFile = await SEND_AUDIO(audioFile);
+    const sentFile = await SEND_AUDIO_GAME(audioFile);
     if (sentFile.status) {
       // console.log('RESPONSE FROM API', sentFile);
+      this.props.onMessage({ ...sentFile.message, speech: null })
       this.playResponse(sentFile.message.speech.audioContent)
     }
     else {
+      Alert.alert('Something went wrong', 'Please try again')
       console.log('SOMETHING WENT WRONG');
     }
   };
@@ -87,7 +88,7 @@ export default class RadioComponent extends Component {
 
     try {
       const fileCreated = this.arrayBufferToBase64(buffer.data)
-      console.log('FILE CREATED', fileCreated);
+      // console.log('FILE CREATED', fileCreated);
       let path = `${RNFS.DocumentDirectoryPath}/response.mp3`;
       RNFS.writeFile(path, fileCreated, 'base64').then(() => playSound()).catch(err => {
         console.log('ERROR OCURRED', err);
@@ -97,7 +98,6 @@ export default class RadioComponent extends Component {
         const sound = new Sound(path, '', () => callback(sound))
       }
       const callback = (sound) => {
-        console.log('inside callback');
         Sound.setCategory('Playback');
 
         sound.play(success => {

@@ -22,8 +22,17 @@ export const PLAY_SOUND = () => {
             .on('ended', () => {
                 // Enable button again after playback finishes
                 console.log('FINISHED PLAYING');
+            })
+            .on('error', (error) => {
+                // Enable button again after playback finishes
+                console.log('FINISHED PLAYING WITH ERROR', error);
             });
     } catch (error) {
         console.log('ERROR', error);
     }
 }
+
+
+// For android remove this line
+
+//                needToPauseAfterSet = !wasAlreadyPlaying && speedValue != 0.0f;

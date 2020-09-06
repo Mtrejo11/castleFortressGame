@@ -26,7 +26,8 @@ export default class RadioComponent extends Component {
       audioFile: '',
       recording: false,
       loaded: false,
-      paused: true
+      paused: true,
+      step: 0,
     };
     this.initialRequest()
   }
@@ -112,7 +113,7 @@ export default class RadioComponent extends Component {
     try {
       const fileCreated = this.arrayBufferToBase64(buffer.data)
       // console.log('FILE CREATED', fileCreated);
-      let path = `${RNFS.DocumentDirectoryPath}/response.mp3`;
+      let path = `${RNFS.DocumentDirectoryPath}/response${this.state.step}.mp3`;
       RNFS.writeFile(path, fileCreated, 'base64').then(() => playSound()).catch(err => {
         console.log('ERROR OCURRED', err);
       })
@@ -129,7 +130,7 @@ export default class RadioComponent extends Component {
           } else {
             console.log('playback failed due to audio decoding errors');
           }
-          this.setState({ paused: true });
+          this.setState({ paused: true, step: this.state.step + 1 });
           // this.sound.release();
         })
       }

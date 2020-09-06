@@ -18,13 +18,19 @@ import { fonts } from '../../utils/fonts';
 
 
 export default class RadioComponent extends Component {
+
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      audioFile: '',
+      recording: false,
+      loaded: false,
+      paused: true
+    };
+    this.initialRequest()
+  }
   sound = null;
-  state = {
-    audioFile: '',
-    recording: false,
-    loaded: false,
-    paused: true
-  };
 
   async componentDidMount() {
     await this.checkPermission();
@@ -45,10 +51,26 @@ export default class RadioComponent extends Component {
     });
   }
 
+  initialRequest = async () => {
+    const sentFile = await SEND_AUDIO_GAME(0, null);
+    if (sentFile.status) {
+      // console.log('RESPONSE FROM API', sentFile);
+      this.props.onMessage({ ...sentFile.message, speech: null })
+      this.playResponse(sentFile.message.speech.audioContent)
+    }
+    else {
+      Alert.alert('Something went wrong', 'Please try again')
+      console.log('SOMETHING WENT WRONG', sentFile.message);
+    }
+  }
+
+
   checkPermission = async () => {
     const permission = Platform.OS === 'ios' ? PERMISSIONS.IOS.MICROPHONE : PERMISSIONS.ANDROID.RECORD_AUDIO
     const p = await Permissions.check(permission);
-    if (p === 'authorized') return;
+    if (p === 'authorized') {
+      return;
+    }
     return this.requestPermission();
   };
 

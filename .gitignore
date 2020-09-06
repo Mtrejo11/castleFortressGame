@@ -41,7 +41,6 @@ buck-out/
 *.keystore
 !debug.keystore
 
-/src/assets/sounds/
 
 # fastlane
 #

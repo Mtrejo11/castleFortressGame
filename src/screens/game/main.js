@@ -7,11 +7,31 @@ import { fonts } from "../../../utils/fonts";
 import { colors } from "../../../utils/colors";
 import { PLAY_SOUND } from "../../../utils/sound_effects";
 import { AppContext } from '../../context/provider'
+import Permissions, { PERMISSIONS } from 'react-native-permissions';
+
 import auth from '@react-native-firebase/auth'
 class MainScreen extends Component {
     _navigateGameHandler = () => {
         this.props.navigation.navigate('Game')
     }
+
+    async componentDidMount() {
+        await this.checkPermission()
+    }
+
+    checkPermission = async () => {
+        const permission = Platform.OS === 'ios' ? PERMISSIONS.IOS.MICROPHONE : PERMISSIONS.ANDROID.RECORD_AUDIO
+        const p = await Permissions.check(permission);
+        if (p === 'authorized') return;
+        return this.requestPermission();
+      };
+    
+      requestPermission = async () => {
+        const permission = Platform.OS === 'ios' ? PERMISSIONS.IOS.MICROPHONE : PERMISSIONS.ANDROID.RECORD_AUDIO
+        const p = await Permissions.request(permission);
+    
+      };
+    
 
     _logoutHandler = async (action) => {
         console.log('LOGIN OUT');

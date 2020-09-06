@@ -8,7 +8,19 @@ import { colors } from "../../../utils/colors";
 import { PLAY_SOUND } from "../../../utils/sound_effects";
 import { AppContext } from '../../context/provider'
 import auth from '@react-native-firebase/auth'
+import InstructionsModal from "../../components/instructionsModal";
+import AboutModal from '../../components/aboutModal';
+
+const initState = {
+    instructionsVisible: false,
+    aboutVisible: false
+}
 class MainScreen extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { ...initState }
+    }
+
     _navigateGameHandler = () => {
         this.props.navigation.navigate('Game')
     }
@@ -31,8 +43,8 @@ class MainScreen extends Component {
                 <SafeAreaView style={styles.mainContainer}>
                     <Image source={logoMain} style={{ height: 180, resizeMode: 'contain' }} />
                     <MainGameButton buttonText={'Play'} buttonAction={this._navigateGameHandler} />
-                    <MainGameButton buttonText={'Instructions'} buttonAction={this._navigateMainHandler} />
-                    <MainGameButton buttonText={'About'} buttonAction={this._navigateMainHandler} />
+                    <MainGameButton buttonText={'Instructions'} buttonAction={() => this.setState({ instructionsVisible: true })} />
+                    <MainGameButton buttonText={'About'} buttonAction={() => this.setState({ aboutVisible: true })} />
                     <AppContext.Consumer>
                         {
                             context =>
@@ -41,6 +53,8 @@ class MainScreen extends Component {
                     </AppContext.Consumer>
                     <Button title='PLAY SOUND' onPress={PLAY_SOUND}></Button>
                 </SafeAreaView>
+                <InstructionsModal visible={this.state.instructionsVisible} goBack={() => this.setState({ instructionsVisible: false })} />
+                <AboutModal visible={this.state.aboutVisible} goBack={() => this.setState({ aboutVisible: false })} />
             </LinearGradient>
         )
     }

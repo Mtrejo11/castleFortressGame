@@ -53,7 +53,7 @@ class LoginScreen extends Component {
         return (
             <LinearGradient colors={['#041936', '#06334f', '#041936']} style={styles.linearGradient}>
 
-                <SafeAreaView style={{ flex: 1 }}>
+                <SafeAreaView style={{ flex: 1, }}>
                     <KeyboardAvoidingView
                         behavior={Platform.OS == "ios" ? "padding" : "height"}
                         style={styles.mainContainer}
@@ -92,9 +92,8 @@ export default ({ navigation }) => (
 const styles = StyleSheet.create({
     mainContainer: {
         flex: 1,
-        justifyContent: 'flex-start',
+        justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 150
     },
     linearGradient: {
         flex: 1,

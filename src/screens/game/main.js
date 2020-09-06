@@ -6,9 +6,23 @@ import logoMain from '../../assets/images/logo.png'
 import { fonts } from "../../../utils/fonts";
 import { colors } from "../../../utils/colors";
 import { PLAY_SOUND } from "../../../utils/sound_effects";
+import { AppContext } from '../../context/provider'
+import auth from '@react-native-firebase/auth'
 class MainScreen extends Component {
-    _navigateGameHandler = () =>{
+    _navigateGameHandler = () => {
         this.props.navigation.navigate('Game')
+    }
+
+    _logoutHandler = async (action) => {
+        console.log('LOGIN OUT');
+        this.props.navigation.navigate('Loading')
+        try {
+
+            await action()
+            // await auth().signOut()
+        } catch (error) {
+            console.log('ERROR', error);
+        }
     }
     render() {
         return (
@@ -19,6 +33,12 @@ class MainScreen extends Component {
                     <MainGameButton buttonText={'Play'} buttonAction={this._navigateGameHandler} />
                     <MainGameButton buttonText={'Instructions'} buttonAction={this._navigateMainHandler} />
                     <MainGameButton buttonText={'About'} buttonAction={this._navigateMainHandler} />
+                    <AppContext.Consumer>
+                        {
+                            context =>
+                                <MainGameButton buttonText={'Logout'} buttonAction={() => this._logoutHandler(context.removeToken)} />
+                        }
+                    </AppContext.Consumer>
                     <Button title='PLAY SOUND' onPress={PLAY_SOUND}></Button>
                 </SafeAreaView>
             </LinearGradient>

@@ -19,6 +19,7 @@ export default class AppProvider extends Component {
 
         },
         removeToken: async () => {
+            console.log('REMOVINF TOKEN');
             try {
                 const resp = await AsyncStorage.removeItem('userToken');
                 return resp

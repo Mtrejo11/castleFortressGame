@@ -36,14 +36,15 @@ export default class MessagesContainer extends Component {
             <View style={styles.container}>
 
                 <FlatList
-                    ref={'_messagesList'}
-                    style={{ maxHeight: '80%', zIndex:20}}
+                    ref={ref => this.flatList = ref}
+                    style={{ maxHeight: '80%', zIndex: 20 }}
                     scrollEnabled
                     data={this.props.messages}
                     extraData={this.props.changeFlag}
                     keyExtractor={(value, index) => value.from + '' + index}
-                    renderItem={(value) => <MessageContainer message={value.item}
-                    />}
+                    renderItem={(value) => <MessageContainer message={value.item} />}
+                    onContentSizeChange={() => this.flatList.scrollToEnd({ animated: true })}
+                    onLayout={() => this.flatList.scrollToEnd({ animated: true })}
                 />
             </View>
         );

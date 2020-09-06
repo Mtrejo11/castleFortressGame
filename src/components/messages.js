@@ -37,7 +37,8 @@ export default class MessagesContainer extends Component {
 
                 <FlatList
                     ref={'_messagesList'}
-                    style={{ maxHeight: '95%', }}
+                    style={{ maxHeight: '80%', zIndex:20}}
+                    scrollEnabled
                     data={this.props.messages}
                     extraData={this.props.changeFlag}
                     keyExtractor={(value, index) => value.from + '' + index}
@@ -62,7 +63,6 @@ const styles = StyleSheet.create({
     messageBubbleContainer: {
         borderRadius: 10,
         padding: 5,
-        marginBottom: 10,
     }, userMessage: {
         color: colors.yellowText,
         fontFamily: fonts.fontRegular,

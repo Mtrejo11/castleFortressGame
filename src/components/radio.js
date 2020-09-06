@@ -72,7 +72,7 @@ export default class RadioComponent extends Component {
     console.log('audioFile', audioFile);
     this.setState({ audioFile, recording: false });
     // const token = await auth().currentUser.getIdToken()
-    const sentFile = await SEND_AUDIO_GAME(audioFile);
+    const sentFile = await SEND_AUDIO_GAME(this.props.lastMessage, audioFile);
     if (sentFile.status) {
       // console.log('RESPONSE FROM API', sentFile);
       this.props.onMessage({ ...sentFile.message, speech: null })
@@ -80,7 +80,7 @@ export default class RadioComponent extends Component {
     }
     else {
       Alert.alert('Something went wrong', 'Please try again')
-      console.log('SOMETHING WENT WRONG');
+      console.log('SOMETHING WENT WRONG', sentFile.message);
     }
   };
 

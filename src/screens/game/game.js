@@ -11,8 +11,9 @@ const initialState = {
     currentAvatar: null,
     messages: [],
     messagesFlag: false,
-    currentScenario: null,
+    currentScenario: SCENARIOS[3],
     chatFlow: [],
+    lastMessage: 1,
 }
 
 
@@ -33,7 +34,14 @@ class MainScreen extends Component {
             userMessage: response.user_txt,
             characterMessage: response.message
         })
-        this.setState({ messages: currentMessages, messagesFlag: !this.state.messagesFlag, chatFlow: currentChatFlow, currentAvatar: CHARACTERS[response.img_avatar] })
+        this.setState({
+            messages: currentMessages,
+            messagesFlag: !this.state.messagesFlag,
+            chatFlow: currentChatFlow,
+            currentAvatar: CHARACTERS[response.img_avatar],
+            currentScenario: SCENARIOS[response.img_landscape],
+            lastMessage: response.idChat
+        })
     }
 
     render() {
@@ -43,7 +51,7 @@ class MainScreen extends Component {
                 <SafeAreaView style={styles.mainContainer}>
                     <View style={styles.gameCanvas}>
                         <ImageBackground
-                            source={SCENARIOS[3]}
+                            source={this.state.currentScenario}
                             style={styles.image}
                         >
 
@@ -52,18 +60,18 @@ class MainScreen extends Component {
                                 <View style={{ width: '60%', height: '100%', }}>
                                     <MessagesContainer messages={this.state.messages} changeFlag={this.state.messagesFlag} />
                                     {
-                                        this.state.messages.length > 0 ? <Image source={shadowBox} style={{ height: '100%', width: '100%', position: 'absolute', }} /> : null
+                                        this.state.messages.length > 0 ? <Image source={shadowBox} style={{ height: '100%', width: '100%', position: 'absolute', zIndex: -3 }} /> : null
                                     }
                                 </View>
                                 <View style={{ width: '40%', height: '100%', }}>
                                     {
-                                        this.state.currentAvatar ? <Image source={this.state.currentAvatar} style={{ maxWidth: '100%', maxHeight: '100%' }} /> : null
+                                        this.state.currentAvatar && this.state.currentAvatar !== -1 ? <Image source={this.state.currentAvatar} style={{ maxWidth: '100%', maxHeight: '100%' }} /> : null
                                     }
                                 </View>
                             </View>
                         </ImageBackground>
                     </View>
-                    <RadioComponent onMessage={this._onMessageHandler} />
+                    <RadioComponent onMessage={this._onMessageHandler} lastMessage={this.state.lastMessage} />
                 </SafeAreaView>
             </LinearGradient>
         )

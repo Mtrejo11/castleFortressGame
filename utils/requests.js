@@ -20,7 +20,7 @@ export const REGISTER_USER = async (data) => {
 }
 
 
-export const SEND_AUDIO_GAME = async (urlaudio) => {
+export const SEND_AUDIO_GAME = async (id, urlaudio) => {
     try {
         const file = await RNFS.readFile(urlaudio, 'base64')
         const buffered = Buffer.from(file, 'base64')
@@ -29,9 +29,10 @@ export const SEND_AUDIO_GAME = async (urlaudio) => {
         myHeaders.append("Content-Type", "application/json");
         const data = {
             audioContent: buffered,
-            idChat: 2
+            idChat: id
         }
 
+        console.log('DATA SENT', id);
         const url = `https://castlefortress-game.web.app/api/v1/gameNPL`
         const response = await fetch(url, {
             method: "POST", // or 'PUT'

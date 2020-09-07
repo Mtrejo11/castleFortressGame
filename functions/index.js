@@ -22,6 +22,7 @@ exports.registerUser = functions.https.onCall(async (data, context) => {
         return { status: true, message: newUser }
 
     } catch (error) {
+        console.log('ERROR', error);
         return { status: false, message: error }
     }
 });

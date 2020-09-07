@@ -8,6 +8,8 @@ import { colors } from "../../../utils/colors";
 import { FormInput } from "../../components/inputs";
 import { REGISTER_USER } from "../../../utils/requests";
 import { isEmailValid, isUsernameValid, isPasswordValid } from "../../../utils/validations";
+import { AppContext } from '../../context/provider'
+
 const initState = {
     username: '',
     email: '',
@@ -32,7 +34,7 @@ class RegisterScreen extends Component {
         this.setState({ [name]: value })
     }
 
-    _registrationHandler = async () => {
+    _registrationHandler = async (saveToken) => {
         this.setState({ loadingAction: true })
 
         const data = {
@@ -45,6 +47,7 @@ class RegisterScreen extends Component {
         if (response.data.status) {
             this.setState({ ...initState })
             Alert.alert('', 'User registered successfully')
+            await saveToken(response.data.message.uid)
             this._navigateMainHandler()
         } else {
             this.setState({ loadingAction: false })
@@ -54,7 +57,6 @@ class RegisterScreen extends Component {
 
     checkAvailable = () => {
         const available = isEmailValid(this.state.email) && isPasswordValid(this.state.password) && isUsernameValid(this.state.username)
-        console.log('AVAILABLE', available);
         return !(isEmailValid(this.state.email) && isPasswordValid(this.state.password) && isUsernameValid(this.state.username))
     }
 
@@ -73,7 +75,13 @@ class RegisterScreen extends Component {
                         <FormInput placeholder="Email" type={'text'} value={this.state.email} changeHandler={value => this._changeHandler('email', value)} />
                         <FormInput placeholder="Password" type={'password'} value={this.state.password} changeHandler={value => this._changeHandler('password', value)} />
                         <Text style={styles.indications}>Must at least contain 8 characters, 1 uppercase, 1 number or 1 special character. </Text>
-                        <MainButton buttonText={'Register'} buttonAction={this._registrationHandler} loading={this.state.loadingAction} disabled={this.checkAvailable()} />
+                        <AppContext.Consumer>
+                            {
+                                context => (
+                                    <MainButton buttonText={'Register'} buttonAction={() => this._registrationHandler(context.saveToken)} loading={this.state.loadingAction} disabled={this.checkAvailable()} />
+                                )
+                            }
+                        </AppContext.Consumer>
                     </KeyboardAvoidingView>
                 </SafeAreaView>
             </LinearGradient>

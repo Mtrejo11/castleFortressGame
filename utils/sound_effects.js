@@ -18,7 +18,7 @@ export const PLAY_SOUND = () => {
 
         // Load the sound file 'whoosh.mp3' from the app bundle
         // See notes below about preloading sounds within initialization code below.
-        const player = new Player('phone.mp3').play()
+        const player = new Player('radio.mp3').play()
             .on('ended', () => {
                 // Enable button again after playback finishes
                 console.log('FINISHED PLAYING');

@@ -26,6 +26,7 @@
 		82E5E1D9099D36DA15550BF5 /* libPods-castleFortressGame-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 896C4898C72710A514D1C6B6 /* libPods-castleFortressGame-tvOSTests.a */; };
 		88A4B61018A34FE1A2DE6432 /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3EAC7D8DBD4655B4334BB3 /* TitilliumWeb-Bold.ttf */; };
 		A443A29F2500A9DC00003836 /* phone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A443A29E2500A9DC00003836 /* phone.mp3 */; };
+		A4C44B0B2505B20E00F4CBDD /* radio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C44B0A2505B20E00F4CBDD /* radio.mp3 */; };
 		A4E9E1F924F337D2000281E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4E9E1F824F337D2000281E3 /* GoogleService-Info.plist */; };
 		B97703159D924A7FA84A6F5C /* TitilliumWeb-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA725CCCC78149B2AB0080BB /* TitilliumWeb-LightItalic.ttf */; };
 		C27CEB0F12404175979302DB /* TitilliumWeb-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDCCFF1BAC644F196A1458A /* TitilliumWeb-ExtraLightItalic.ttf */; };
@@ -79,6 +80,7 @@
 		9B3EAC7D8DBD4655B4334BB3 /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-Bold.ttf"; path = "../src/assets/fonts/TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
 		9E17CFB252034FF9B5FAE7CA /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-Italic.ttf"; path = "../src/assets/fonts/TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
 		A443A29E2500A9DC00003836 /* phone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = phone.mp3; path = ../src/assets/sounds/phone.mp3; sourceTree = "<group>"; };
+		A4C44B0A2505B20E00F4CBDD /* radio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = radio.mp3; sourceTree = "<group>"; };
 		A4E9E1F824F337D2000281E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A7E8AA65AAB24A09AA56D11F /* TitilliumWeb-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-BoldItalic.ttf"; path = "../src/assets/fonts/TitilliumWeb-BoldItalic.ttf"; sourceTree = "<group>"; };
 		AA725CCCC78149B2AB0080BB /* TitilliumWeb-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TitilliumWeb-LightItalic.ttf"; path = "../src/assets/fonts/TitilliumWeb-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		188606A2603F48F7ABEE99A1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A4C44B0A2505B20E00F4CBDD /* radio.mp3 */,
 				BF3A05D9A8924CB4BB59E75F /* TitilliumWeb-Black.ttf */,
 				A443A29E2500A9DC00003836 /* phone.mp3 */,
 				9B3EAC7D8DBD4655B4334BB3 /* TitilliumWeb-Bold.ttf */,
@@ -394,6 +397,7 @@
 				0F9E6CEE5E2047AF96B3C461 /* TitilliumWeb-Black.ttf in Resources */,
 				88A4B61018A34FE1A2DE6432 /* TitilliumWeb-Bold.ttf in Resources */,
 				EBF55B4DA2D3418EBE9BB33B /* TitilliumWeb-BoldItalic.ttf in Resources */,
+				A4C44B0B2505B20E00F4CBDD /* radio.mp3 in Resources */,
 				2F507D6B1B4041FCBCDF319B /* TitilliumWeb-ExtraLight.ttf in Resources */,
 				C27CEB0F12404175979302DB /* TitilliumWeb-ExtraLightItalic.ttf in Resources */,
 				4402049E68E84DB797E91273 /* TitilliumWeb-Italic.ttf in Resources */,

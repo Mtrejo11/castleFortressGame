@@ -14,6 +14,10 @@ import rightArrow from '../assets/images/right_arrow.png'
 import leftArrow from '../assets/images/left_arrow.png'
 import { colors } from '../../utils/colors';
 import { fonts } from '../../utils/fonts';
+import {
+  Player
+} from '@react-native-community/audio-toolkit';
+
 
 
 
@@ -30,8 +34,9 @@ export default class RadioComponent extends Component {
       step: 0,
     };
     this.initialRequest()
+
   }
-  sound = null;
+
 
   async componentDidMount() {
     await this.checkPermission();
@@ -95,11 +100,21 @@ export default class RadioComponent extends Component {
     console.log('audioFile', audioFile);
     this.setState({ audioFile, recording: false });
     // const token = await auth().currentUser.getIdToken()
+    const player = new Player('radio.mp3').play()
+      .on('ended', () => {
+        // Enable button again after playback finishes
+        console.log('FINISHED PLAYING');
+      })
+      .on('error', (error) => {
+        // Enable button again after playback finishes
+        console.log('FINISHED PLAYING WITH ERROR', error);
+      });
     const sentFile = await SEND_AUDIO_GAME(this.props.lastMessage, audioFile);
     if (sentFile.status) {
       // console.log('RESPONSE FROM API', sentFile);
+
       this.props.onMessage({ ...sentFile.message, speech: null })
-      this.playResponse(sentFile.message.speech.audioContent)
+      this.playResponse(sentFile.message.speech.audioContent, player)
     }
     else {
       Alert.alert('Something went wrong', 'Please try again')
@@ -107,7 +122,7 @@ export default class RadioComponent extends Component {
     }
   };
 
-  loadResponse = async buffer => {
+  loadResponse = async (buffer, radioPlayer) => {
     console.log('LOADING RESPONSE');
 
     try {
@@ -117,7 +132,9 @@ export default class RadioComponent extends Component {
       RNFS.writeFile(path, fileCreated, 'base64').then(() => playSound()).catch(err => {
         console.log('ERROR OCURRED', err);
       })
+
       const playSound = () => {
+        if (radioPlayer) radioPlayer.stop()
         console.log('PLAYING SOUND');
         const sound = new Sound(path, '', () => callback(sound))
       }
@@ -168,14 +185,16 @@ export default class RadioComponent extends Component {
     return encode(binary);
   }
 
-  playResponse = async (buffer) => {
+  playResponse = async (buffer, player) => {
     if (!this.state.loaded) {
       try {
-        await this.loadResponse(buffer);
+
+        await this.loadResponse(buffer, player);
       } catch (error) {
         console.log(error);
       }
     }
+
 
     this.setState({ paused: false });
 

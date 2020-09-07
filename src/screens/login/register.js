@@ -93,9 +93,8 @@ class RegisterScreen extends Component {
 const styles = StyleSheet.create({
     mainContainer: {
         flex: 1,
-        justifyContent: 'flex-start',
+        justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 80
     },
     linearGradient: {
         flex: 1,

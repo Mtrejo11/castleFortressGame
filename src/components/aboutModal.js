@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Modal, Text, StyleSheet, Image } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import { MainGameButton } from "../components/buttons";
 import logoMain from '../assets/images/logo.png';
 import { colors } from "../../utils/colors";
 import { fonts } from "../../utils/fonts";
@@ -21,6 +22,7 @@ export default function AboutModal(props) {
                             A rookie FBI agent must solve the kidnapping case of two children
                             in a small rural town, but what begins as a small investigation
                              reveals darker secrets that were buried in the past.</Text>
+                        <MainGameButton buttonText={'Close'} buttonAction={props.goBack} />
                     </View>
                 </View>
             </LinearGradient>
@@ -31,6 +33,7 @@ export default function AboutModal(props) {
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
+
         width: '100%',
         flexGrow: 1,
     },

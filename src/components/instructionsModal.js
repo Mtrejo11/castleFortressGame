@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Modal, Text, StyleSheet, Image } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import { MainGameButton } from "../components/buttons";
 import imagesrc from '../assets/images/instructions.png';
 import { colors } from "../../utils/colors";
 import { fonts } from "../../utils/fonts";
@@ -17,6 +18,7 @@ export default function InstructionsModal(props) {
                 <View style={{ flex: 1, flexDirection: 'column' }}>
                     <View style={styles.container}>
                         <Image source={imagesrc} style={{ resizeMode: 'contain', alignSelf: 'center', height: 500 }} />
+                        <MainGameButton buttonText={'Close'} buttonAction={props.goBack} />
                     </View>
                 </View>
             </LinearGradient>
@@ -27,6 +29,7 @@ export default function InstructionsModal(props) {
 const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
+        alignItems: 'center',
         width: '100%',
         flexGrow: 1,
     },

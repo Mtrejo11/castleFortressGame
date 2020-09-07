@@ -71,7 +71,6 @@ class MainScreen extends Component {
                                 <MainGameButton buttonText={'Logout'} buttonAction={() => this._logoutHandler(context.removeToken)} />
                         }
                     </AppContext.Consumer>
-                    <Button title='PLAY SOUND' onPress={PLAY_SOUND}></Button>
                 </SafeAreaView>
                 <InstructionsModal visible={this.state.instructionsVisible} goBack={() => this.setState({ instructionsVisible: false })} />
                 <AboutModal visible={this.state.aboutVisible} goBack={() => this.setState({ aboutVisible: false })} />

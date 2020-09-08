@@ -36,22 +36,20 @@ class MainScreen extends Component {
         const p = await Permissions.check(permission);
         if (p === 'authorized') return;
         return this.requestPermission();
-      };
-    
-      requestPermission = async () => {
+    };
+
+    requestPermission = async () => {
         const permission = Platform.OS === 'ios' ? PERMISSIONS.IOS.MICROPHONE : PERMISSIONS.ANDROID.RECORD_AUDIO
         const p = await Permissions.request(permission);
-    
-      };
-    
+
+    };
+
 
     _logoutHandler = async (action) => {
-        console.log('LOGIN OUT');
         this.props.navigation.navigate('Loading')
         try {
 
             await action()
-            // await auth().signOut()
         } catch (error) {
             console.log('ERROR', error);
         }

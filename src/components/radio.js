@@ -160,23 +160,6 @@ export default class RadioComponent extends Component {
 
   }
 
-
-  load = () => {
-    return new Promise((resolve, reject) => {
-      if (!this.state.audioFile) {
-        return reject('file path is empty');
-      }
-      console.log('CURRENT SOUND TO LOAD', this.state.audioFile);
-      this.sound = new Sound(this.state.audioFile, '', error => {
-        if (error) {
-          console.log('failed to load the file', error);
-          return reject(error);
-        }
-        this.setState({ loaded: true });
-        return resolve();
-      });
-    });
-  };
   arrayBufferToBase64 = (buffer) => {
     var binary = '';
     var bytes = new Uint8Array(buffer);
@@ -200,29 +183,6 @@ export default class RadioComponent extends Component {
 
     this.setState({ paused: false });
 
-  };
-
-  play = async () => {
-    if (!this.state.loaded) {
-      try {
-        await this.load();
-      } catch (error) {
-        console.log(error);
-      }
-    }
-
-    this.setState({ paused: false });
-    Sound.setCategory('Playback');
-    console.log('CURRENTLY PLAYING', this.sound);
-    this.sound.play(success => {
-      if (success) {
-        console.log('successfully finished playing');
-      } else {
-        console.log('playback failed due to audio decoding errors');
-      }
-      this.setState({ paused: true });
-      // this.sound.release();
-    });
   };
 
   pause = () => {

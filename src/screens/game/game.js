@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet, Image, ImageBackground } from "react-native";
+import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet, Image, ImageBackground, DeviceEventEmitter } from "react-native";
 import RadioComponent from "../../components/radio";
 import MessagesContainer from "../../components/messages";
 import LinearGradient from "react-native-linear-gradient";
@@ -9,7 +9,6 @@ import { CHARACTERS, SCENARIOS } from "../../../utils/assets";
 
 const initialState = {
     currentAvatar: null,
-    messages: [],
     messagesFlag: false,
     currentScenario: SCENARIOS[3],
     chatFlow: [],
@@ -24,18 +23,25 @@ class MainScreen extends Component {
             ...initialState
 
         }
+        console.log('CONSTRUCTOR', this.state.messages);
     }
-
+    messages = []
+    cleanVariables = () => {
+        console.log('cleaned messages');
+        this.setState({ messages: [], messagesFlag: !this.state.messagesFlag })
+    }
     _onMessageHandler = (response) => {
         console.log('DATA RECEIVED', response);
-        const currentMessages = this.state.messages
+        const currentMessages = this.messages
         const currentChatFlow = this.state.chatFlow
         currentMessages.push({
             userMessage: response.user_txt,
             characterMessage: response.message
         })
+
+        this.messages = currentMessages
+        
         this.setState({
-            messages: currentMessages,
             messagesFlag: !this.state.messagesFlag,
             chatFlow: currentChatFlow,
             currentAvatar: CHARACTERS[response.img_avatar],
@@ -44,6 +50,7 @@ class MainScreen extends Component {
         })
     }
 
+   
     render() {
         return (
             <LinearGradient colors={['#041936', '#06334f', '#041936']} style={styles.linearGradient}>
@@ -58,9 +65,9 @@ class MainScreen extends Component {
 
                             <View style={styles.charactersContainer}>
                                 <View style={{ width: '60%', height: '100%', }}>
-                                    <MessagesContainer messages={this.state.messages} changeFlag={this.state.messagesFlag} />
+                                    <MessagesContainer messages={this.messages} changeFlag={this.state.messagesFlag} />
                                     {
-                                        this.state.messages.length > 0 ? <Image source={shadowBox} style={{ height: '100%', width: '100%', position: 'absolute', zIndex: -3 }} /> : null
+                                        this.messages.length > 0 ? <Image source={shadowBox} style={{ height: '100%', width: '100%', position: 'absolute', zIndex: -3 }} /> : null
                                     }
                                 </View>
                                 <View style={{ width: '40%', height: '100%', }}>
@@ -71,7 +78,7 @@ class MainScreen extends Component {
                             </View>
                         </ImageBackground>
                     </View>
-                    <RadioComponent onMessage={this._onMessageHandler} lastMessage={this.state.lastMessage} />
+                    <RadioComponent onMessage={this._onMessageHandler} lastMessage={this.state.lastMessage} clean={this.cleanVariables} />
                 </SafeAreaView>
             </LinearGradient>
         )

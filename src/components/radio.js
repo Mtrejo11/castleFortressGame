@@ -118,6 +118,7 @@ export default class RadioComponent extends Component {
     }
     else {
       Alert.alert('Something went wrong', 'Please try again')
+      player.stop()
       console.log('SOMETHING WENT WRONG', sentFile.message);
     }
   };
@@ -246,7 +247,7 @@ export default class RadioComponent extends Component {
         </View>
         <View style={styles.row}>
           <View style={styles.row}>
-            <TouchableOpacity style={{ width: 60, height: 60 }}>
+            <TouchableOpacity style={{ width: 60, height: 60 }} onPress={() => this.props.clean()}>
               <Image source={cluesIcon} style={{ width: 'auto', height: '100%', resizeMode: 'contain' }} />
             </TouchableOpacity>
             {

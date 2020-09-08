@@ -40,7 +40,7 @@ export const SEND_AUDIO_GAME = async (id, urlaudio) => {
             headers: myHeaders
         });
         const second_response = await response.json();
-        console.log('SECOND RESPONSE', second_response);
+        // console.log('SECOND RESPONSE', second_response);
         if (response.status === 200 || response.status === 202) {
             return { status: true, message: second_response };
         } else {

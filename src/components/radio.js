@@ -127,9 +127,10 @@ export default class RadioComponent extends Component {
     console.log('LOADING RESPONSE');
 
     try {
+      const timestamp = Date.now()
       const fileCreated = this.arrayBufferToBase64(buffer.data)
       // console.log('FILE CREATED', fileCreated);
-      let path = `${RNFS.DocumentDirectoryPath}/response${this.state.step}.mp3`;
+      let path = `${RNFS.DocumentDirectoryPath}/response${timestamp}.mp3`;
       RNFS.writeFile(path, fileCreated, 'base64').then(() => playSound()).catch(err => {
         console.log('ERROR OCURRED', err);
       })
